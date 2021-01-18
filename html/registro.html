@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        <meta charset="utf-8" />
+        <title>BiblioFacil | Ingreso</title>
+        <link rel="stylesheet" href="fonts/style.css">
+        <link rel="stylesheet" href="css/hojaEstilos_registro.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    
+    
+    <body>
+    <header>
+        <h1>BIBLIOFACIL</h1>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="icon-menu"></label>
+        <nav class="menu">
+           <ul>
+               <li class = "submenu" ><a href="ayuda.html">Ayuda
+                   <span class="icon-question"></span></a>
+               </li>
+           </ul>
+        </nav> 
+    </header>
+        
+    <form action="php/login.php" method="POST" class="form"> 
+        <div id="registro">
+            <div>
+                <img src="imagenes/Escudo-Colegio_1.png" class= "tamano_img" >
+            </div>        
+    	    <span class="icon-envelop"></span>  <input type="email" name="email" required="required" 
+    	    placeholder="Email"><br><br>
+        
+        	<span class="icon-lock"></span>  <input type="password" name="password" required="required" 
+        	placeholder="Contraseña"><br><br>
+        
+        	<input type="submit" name="entrar" value="Entrar" id="entrar">  
+    	</div>
+    </form>
+    
+    
+        <footer class="footer">
+            <p>
+                Siguenos en nuestras redes sociales: 
+                <a href="#" ><span class="icon-facebook2"></span></a> 
+                <a href="#" ><span class="icon-twitter"></span></a> 
+                <a href="#" ><span class="icon-instagram"></span></a><br>
+                Todos los derechos reservados 2020
+            </p>
+        </footer>
+    
+    
+    </body>
+    
+    
+</html>
+

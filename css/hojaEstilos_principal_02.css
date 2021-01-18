@@ -1,0 +1,262 @@
+/*RESET BASICO DE LOS ESTILOS PREDETERMINADOS QUE ASIGNA EL NAVEGADOR*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*TAMAÑO Y COLOR DEL ENCABEZADO, ADEMAS DE QUE UBICA EL MENU A LA DERECHA */
+
+body{
+    background: #FFF1E8;
+}
+
+header {
+    height: 50px;
+    background: rgba(30, 75, 83, 0.98);
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+h1{
+    color: #fff;
+    margin-right: auto;
+    padding: 10px;
+    border-color: #747d8c;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Sansita Swashed', cursive;
+}
+
+/*OCULTA EL BOTON MENU*/
+
+#btn-menu{
+    display: none;
+}
+
+
+/*OCULTA EL BOTON Y MUESTRA MANITO CUANDO ESTA ENCIMA DE EL*/
+header label {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/*ORGANIZA DE MANERA HORIZONTAL EL MENU DE BOTONES*/
+.menu ul {
+    background: rgba(30, 75, 83, 0.98); 
+    display:flex;
+    list-style: none;
+}
+
+/*OCULTA LOS SUB BOTONES*/
+.menu ul ul {
+    display: none;
+}
+
+/*BORDES Y COLOR DE LOS BOTONES VISIBLES*/
+
+.menu a{
+    display: block;
+    padding: 15px 20px;
+    color:#fff;
+    text-decoration: none;
+}
+
+/*CUANDO EL MOUSE PASA POR ENCIMA SE TORNA OSCURO CLARO EL BOTON*/
+
+.menu a:hover{
+    background: rgba(0,0,0,0.3)
+}
+
+
+/*DISTANCIA DEL ICONO EN LOS BOTONES PRINCIPALES*/
+.menu a span {
+    margin-left: 10px;
+}
+
+/*CUANDO EL MOUSE PASA POR ENCIMA DEL BOTON SE DESPLIEGAN LAS OPCIONES*/
+
+.menu ul li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+.parrafos{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #DBFFFB;
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+    -moz-box-shadow: 0 10px 5px #888888;
+    box-shadow: 0 4px 5px #888888;
+}
+
+.parrafos h2 {
+    text-align: center;
+    margin: 8px;
+    font-family: 'Roboto', sans-serif;
+   
+}
+.parrafos h4 {
+    text-align: center;
+    margin: 8px;
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+.parrafos h2 span{
+    margin-right: 15px;
+}
+
+.parrafos p{
+    text-align: center;
+    margin: 10px; 
+    
+}
+#img{
+    height: 200px;
+    width: 180px;
+    padding: 2.6em 0em 0em 0em;
+    display: block;
+    float: right;
+}
+
+.tab{
+    align-items: center;
+    background-color: #DBFFFB;
+    margin: auto;
+    margin: 15px 10px;
+    border-radius: 5px;
+    padding: 0.3em;
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+    -moz-box-shadow: 0 10px 5px #888888;
+    box-shadow: 0 4px 5px #888888;      
+}
+
+.tab p{
+    text-align: justify;
+    padding: 0.5em
+}
+
+.tab h2{
+    background: rgba(30, 75, 83, 0.98);
+    color: #fff;
+    padding: 0.2em 1em;;
+
+}
+
+.tab a{
+    background-color: rgba(30, 75, 83, 0.98);
+    display: block;
+    margin:auto;
+    float: left;
+    height: 35px;
+    width: 120px;
+    padding: 5px 5px;
+    margin: 15px 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.valores{
+    width: 32%;
+    float: left;
+    background-color: #DBFFFB;
+    text-align: center;
+    padding: 1em;
+    margin: 10px 3px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+    -moz-box-shadow: 0 10px 5px #888888;
+    box-shadow: 0 4px 5px #888888;  
+    
+}
+.val h2{
+    background: rgba(30, 75, 83, 0.98);
+    color: #fff;
+    padding: 0.2em 1em;;
+
+}
+
+#actual{
+ background: rgba(90, 135, 168, 0.78);  
+}
+
+a:active, a:hover{
+    color: rgb(0, 255, 226);
+}
+
+
+.footer{
+    width: 100%;
+    height: 65px;
+    background-color: rgba(30, 75, 83, 0.98);
+    overflow: hidden;
+}
+
+.footer p{
+    text-align: center; 
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.footer a span {
+    margin-left: 15px;
+    font-size: 18px;
+    color:#fff;
+}
+
+/*CREACION DE LOS ESTILOS PARA QUE SEA RESPONSIVE*/
+
+@media (max-width:768px){
+    header label {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        top: 50px;
+        left:0;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+    
+    .menu ul {
+        /*flex-direction: column;*/
+        display: block;
+        background: #555;        
+    }
+    
+    .menu ul li:hover ul {
+        display: none;
+        position: static;
+    }
+    
+    .menu a span {
+        position: absolute;
+        right: 5px;
+    }
+    
+    #btn-menu:checked ~ .menu {
+        transform: translateX(0%)
+    }
+    
+    .menu ul ul {
+        background: rgba(0,0,0,0.4);
+    }
+    
+    .menu ul ul a{
+        padding: 15px 45px;
+    }
+}
+
+/**/

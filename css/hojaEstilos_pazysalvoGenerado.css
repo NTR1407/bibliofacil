@@ -1,0 +1,80 @@
+/*RESET BASICO DE LOS ESTILOS PREDETERMINADOS QUE ASIGNA EL NAVEGADOR*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*TAMAÑO Y COLOR DEL ENCABEZADO, ADEMAS DE QUE UBICA EL MENU A LA DERECHA */
+
+body{
+    background: #FFF1E8;
+}
+
+#registro {
+    background: white;
+    margin: auto;
+    margin-top: 10%;
+    width: 75%;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+    -moz-box-shadow: 0 10px 5px #888888;
+    box-shadow: 0 4px 5px #888888;
+    
+}
+
+#titulo h2{
+    float: right;
+    text-align: center;
+    margin: auto;
+    margin-right: 40%;
+    margin-top: 7%;
+
+    /*float: left;*/
+}
+
+.tamano_img{
+    height: 150px;
+    width: 150px;
+    padding: 1em;
+}
+
+#table{
+    margin: auto;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border: black 1px solid;  
+}
+
+#table th{
+    border: black 1px solid;
+}
+
+th{
+    text-align: center;
+    background: #eeeeee;
+    color: #000000;
+    
+}
+
+#p{
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#firma{   
+    margin-left: 38%;
+}
+
+/*CREACION DE LOS ESTILOS PARA QUE SEA RESPONSIVE*/
+
+@media (max-width:768px){
+    header label {
+        display: block;
+    }
+    
+
+}
+

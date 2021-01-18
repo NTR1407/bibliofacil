@@ -1,0 +1,459 @@
+/*RESET BASICO DE LOS ESTILOS PREDETERMINADOS QUE ASIGNA EL NAVEGADOR*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*TAMAÑO Y COLOR DEL ENCABEZADO, ADEMAS DE QUE UBICA EL MENU A LA DERECHA */
+
+body{
+    background: #FFF1E8;
+}
+
+header {
+    height: 50px;
+    background: rgba(30, 75, 83, 0.98);
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h1{
+    color: #fff;
+    margin-right: auto;
+    padding: 10px;
+    border-color: #747d8c;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*OCULTA EL BOTON MENU*/
+
+#btn-menu{
+    display: none;
+}
+
+
+/*OCULTA EL BOTON Y MUESTRA MANITO CUANDO ESTA ENCIMA DE EL*/
+header label {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/*ORGANIZA DE MANERA HORIZONTAL EL MENU DE BOTONES*/
+.menu ul {
+    background: rgba(30, 75, 83, 0.98); 
+    display:flex;
+    list-style: none;
+}
+
+/*OCULTA LOS SUB BOTONES*/
+.menu ul ul {
+    display: none;
+}
+
+/*BORDES Y COLOR DE LOS BOTONES VISIBLES*/
+
+.menu a{
+    display: block;
+    padding: 15px 20px;
+    color:#fff;
+    text-decoration: none;
+}
+
+/*CUANDO EL MOUSE PASA POR ENCIMA SE TORNA OSCURO CLARO EL BOTON*/
+
+.menu a:hover{
+    background: rgba(0,0,0,0.3)
+}
+
+
+/*DISTANCIA DEL ICONO EN LOS BOTONES PRINCIPALES*/
+.menu a span {
+    margin-left: 10px;
+}
+
+/*CUANDO EL MOUSE PASA POR ENCIMA DEL BOTON SE DESPLIEGAN LAS OPCIONES*/
+
+.menu ul li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+.div1{
+    margin-left: 35px;
+    margin-right: 35px
+}
+
+.table1{
+   width: 100%;
+   background: rgb(255, 255, 255);
+   font-family: 'Roboto', sans-serif;
+   border-radius: 5px;
+   -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+   -moz-box-shadow: 0 10px 5px #888888;
+   box-shadow: 0 4px 5px #888888; 
+   margin-bottom: 10px;
+}
+
+.table2{
+   width: 80%;
+   margin: auto;
+   background: rgb(255, 255, 255);
+   font-family: 'Roboto', sans-serif;
+   border-radius: 5px;
+   -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+   -moz-box-shadow: 0 10px 5px #888888;
+   box-shadow: 0 4px 5px #888888; 
+   margin-bottom: 1em;
+}
+
+#titulo_t1{
+    background: rgba(49, 56, 55, 0.65);
+    border: 0;
+    color:#fff;
+}
+
+#titulo_t2{
+    background: rgba(49, 56, 55, 0.65);
+    border: 0;
+    color:#fff;
+}
+.table1 tr td{
+    text-align: center;
+    
+}
+
+.table1 tr th{
+    text-align: center;
+}
+
+
+
+/*CAMBIA EL COLOR DE LAS FILAS IMPARES DE LA TABLA*/
+.table1 tr:nth-child(odd){
+    background: rgba(178, 198, 197, 0.65);
+
+}
+
+/*CAMBIA EL COLOR DE LAS FILAS PARES DE LA TABLA*/
+.table1 tr:nth-child(even){
+    background: rgba(218, 255, 253, 0.65) ;
+ 
+}
+
+
+.table1 tr:hover{
+  background: rgba(0,0,0,0.3);
+  
+}
+
+.table2 tr td{
+    text-align: center;
+    
+}
+
+.table2 tr th{
+    text-align: center;
+}
+
+
+
+/*CAMBIA EL COLOR DE LAS FILAS IMPARES DE LA TABLA*/
+.table2 tr:nth-child(odd){
+    background: rgba(178, 198, 197, 0.65);
+
+}
+
+/*CAMBIA EL COLOR DE LAS FILAS PARES DE LA TABLA*/
+.table2 tr:nth-child(even){
+    background: rgba(218, 255, 253, 0.65) ;
+ 
+}
+
+
+.table2 tr:hover{
+  background: rgba(0,0,0,0.3);
+  
+}
+
+#boton_paginado{
+    margin: auto;
+    text-align: center;
+}
+
+#boton_paginado_1{
+    margin: auto;
+    text-align: center;
+}
+
+#li{
+    list-style: none;
+    text-align: center;
+    cursor: pointer; 
+    display: inline-block;
+}
+
+#li_1{
+    list-style: none;
+    text-align: center;
+    cursor: pointer; 
+    display: inline-block;
+}
+
+#paginado{
+    text-decoration: none;
+    color: #000;
+    background: rgba(0, 143, 248, 0.29);
+    padding: 0.3em;
+    margin-left: 5px;
+    border-radius: 3em;
+    font-size: 15px;
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+    -moz-box-shadow: 0 10px 5px #888888;
+    box-shadow: 0 4px 5px #888888; 
+    
+}
+
+#paginado:hover{
+    color: rgba(34, 41, 234, 0.78);
+}
+
+#paginado_1{
+    text-decoration: none;
+    color: #000;
+    background: rgba(0, 143, 248, 0.29);
+    padding: 0.3em;
+    margin-left: 5px;
+    border-radius: 3em;
+    font-size: 15px;
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+    -moz-box-shadow: 0 10px 5px #888888;
+    box-shadow: 0 4px 5px #888888; 
+    
+}
+
+#paginado_1:hover{
+    color: rgba(34, 41, 234, 0.78);
+}
+
+
+.buscar{
+    background: #DBFFFB;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 1em;
+}
+
+.buscar h3{
+    text-align: center;
+    background: rgba(30, 75, 83, 0.98);
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#buscar_form{
+    padding: 1em;
+}
+#buscar_caja{
+    width: 200px;
+    height: 30px;
+    margin: 10px 10px;
+    
+}
+
+#buscar_envio{
+    width: 100px;
+    height: 25px;
+    background: #D8CCC3;
+    margin: auto;
+    margin-bottom: 10px;
+    color:#000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+     -webkit-box-shadow: 0 2px 2px #888888; 
+    -moz-box-shadow: 0 2px 2px #888888;
+    box-shadow: 0 2px 2px #888888;
+}
+
+#buscar_form_1{
+    padding: 1em;
+}
+#buscar_caja_1{
+    width: 200px;
+    height: 30px;
+    margin: 10px 10px;
+    
+}
+
+#buscar_envio_1{
+    width: 100px;
+    height: 25px;
+    background: #D8CCC3;
+    margin: auto;
+    margin-bottom: 10px;
+    color:#000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+     -webkit-box-shadow: 0 2px 2px #888888; 
+    -moz-box-shadow: 0 2px 2px #888888;
+    box-shadow: 0 2px 2px #888888;
+}
+
+
+
+#entrega{
+    text-decoration: none;
+    background: rgba(63, 148, 221, 0.9);
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px 2px 5px 2px;
+     cursor: pointer; 
+    -webkit-box-shadow: 0 2px 2px #888888; 
+    -moz-box-shadow: 0 2px 2px #888888;
+    box-shadow: 0 2px 2px #888888;
+}
+
+#entrega:hover{
+    color: rgb(250, 250, 250);
+}
+
+.form_edita{
+    text-align: center;
+    
+}
+
+
+.form{
+    text-align: center;
+    margin:auto;
+}
+
+.form table{
+    background: rgba(7, 87, 106, 0.42);
+    text-align: center;
+    padding: 7px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 5px #888888; /*Sombreado del contenedor global*/
+    -moz-box-shadow: 0 5px 5px #888888;
+    box-shadow: 0 5px 5px #888888;
+}
+  
+.form table tr td input{
+    width: 150px;
+    height: 25px;
+}
+.form table tr td select{
+    width: 150px;
+    height: 25px;
+}
+.form table tr td{
+    text-align: left;
+}
+
+#muestra{
+    width: 100px;
+    height: 25px;
+    background: #D8CCC3;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:#000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+     -webkit-box-shadow: 0 2px 2px #888888; 
+    -moz-box-shadow: 0 2px 2px #888888;
+    box-shadow: 0 2px 2px #888888;
+}
+
+#actualizar{
+    width: 100px;
+    height: 25px;
+    margin: auto;
+    background: #D8CCC3;;
+    margin-bottom: 10px;
+    color:#000;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+     -webkit-box-shadow: 0 3px 3px #888888; 
+    -moz-box-shadow: 0 3px 3px #888888;
+    box-shadow: 0 3px 3px #888888;
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 65px;
+    background-color: rgba(30, 75, 83, 0.98);
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.footer p{
+    text-align: center; 
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.footer a span {
+    margin-left: 15px;
+    font-size: 18px;
+    color:#fff;
+}
+
+/*CREACION DE LOS ESTILOS PARA QUE SEA RESPONSIVE*/
+
+@media (max-width:768px){
+    header label {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        top: 50px;
+        left:0;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+    
+    .menu ul {
+        /*flex-direction: column;*/
+        display: block;
+        background: #555;        
+    }
+    
+    .menu ul li:hover ul {
+        display: none;
+        position: static;
+    }
+    
+    .menu a span {
+        position: absolute;
+        right: 5px;
+    }
+    
+    #btn-menu:checked ~ .menu {
+        transform: translateX(0%)
+    }
+    
+    .menu ul ul {
+        background: rgba(0,0,0,0.4);
+    }
+    
+    .menu ul ul a{
+        padding: 15px 45px;
+    }
+}

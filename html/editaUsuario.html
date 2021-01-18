@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>BiblioFacil | Editar Usuario</title>
+        <link rel="stylesheet" href="fonts/style.css">
+        <link rel="stylesheet" href="css/hojaEstilos_editaUsario.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="js/jquery-3.5.1.js"></script>
+       
+    </head>
+    
+<body>
+    <header>
+     <h1 class="h1">BIBLIOFACIL</h1>
+      <input type="checkbox" id="btn-menu">
+      <label for="btn-menu" class="icon-menu"></label>
+       <nav class="menu">
+           <ul>
+                <li class = "submenu" ><a href="Principal_02.html">Principal
+                   <span class="icon-home3"></span></a>
+                </li>
+                <li class = "submenu" ><a href="#">Ayuda
+                   <span class="icon-question"></span></a>
+                </li>
+           </ul>
+       </nav> 
+    </header>
+    <script src="js/principal_02.js"></script>    
+    
+    <div class="div_formulario">
+    <table class="table1">
+        <thead>
+         <tr id="titulo_t2">
+              <th>Id</th><th>Nombres</th><th>Apellidos</th><th>Tipo Id</th><th>Identificación</th>
+              <th>Tipo Usuario</th><th>Genero</th><th>Edad</th><th>Telefono</th>
+              <th>E-mail</th><th>Dirección</th><th>Estado</th>
+              <th colspan="2">Acción</th>
+         </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>as</td><td>as</td><td>as</td><td>as</td>
+              <td>as</td><td>as</td><td>as</td><td>as</td>
+              <td>as</td><td>as</td><td>as</td><td>as</td>
+              <td><input id="botonInactivar" type="submit" value="Inactivar"></td>      
+          </tr>
+        </tbody>
+    </table>
+    <div class="form_edita">
+        <form method="post" id="formulario" class="form">    
+                <table>
+                    <tr>
+                        <td><b>Nombres:</b></td>
+                        <td><label for="nombre"></label>
+                        <input type="text" name="nombre" id="nombre"></td>
+
+                        <td><b>Apellidos:</b></td>
+                        <td><label for="apellidos"></label>
+                        <input type="text" name="apellido" id="apellidos"></td>
+                    <td><b>Tipo Id:</b></td>
+                    <td>
+                        <label for="Tipo_Id"></label>
+                        <select name="tipo_id" >
+                            <option>Tarjeta de identidad</option>
+                            <option>Cedula de ciudadania</option>
+                            <option>Cedula de extranjeria</option>
+                        </select>
+                    </td>
+                        <td><b>Número Id:</b></td>
+                        <td><label for="identificacion"></label>
+                        <input type="text" name="identificacion" id="identificacion"></td>
+                     <td><b>T.Usuario:</b></td>
+                       <td>
+                           <label for="tipo_usuario"></label>
+                           <select name="tipo_usuario" >
+                               <option>Estudiante    </option>
+                               <option>Docente</option>
+                               <option>Administrador         </option>
+                           </select>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><b>Genero:</b></td>
+                        <td><label for="genero"></label>
+                        <input type="text" name="genero" id="genero"></td>
+
+                        <td><b>Edad:</b></td>
+                        <td><label for="edad"></label>
+                        <input type="text" name="edad" id="edad"></td>
+
+                        <td><b>Télefono:</b></td>
+                        <td><label for="telefono"></label>
+                        <input type="text" name="telefono" id="telefono"></td>
+
+                        <td><b>Correo:</b></td>
+                        <td><label for="email"></label>
+                        <input type="text" name="email" id="email"></td>
+
+                        <td><b>Dirección:</b></td>
+                        <td><label for="direccion"></label>
+                        <input type="text" name="direccion" id="direccion"></td>
+
+                    </tr>
+                </table>
+                     <input type="submit" id="actualizar" value="Actualizar">
+        </form>
+        <td><button id="muestra" onclick="muestraFormulario()">Editar</button></td>
+    </div>
+    </div>
+    <script src="js/editaUsuario.js"></script> 
+    <footer class="footer">
+        <p>
+            Siguenos en nuestras redes sociales: 
+            <a href="#" ><span class="icon-facebook2"></span></a> 
+            <a href="#" ><span class="icon-twitter"></span></a> 
+            <a href="#" ><span class="icon-instagram"></span></a><br>
+            Todos los derechos reservados 2020
+        </p>
+    </footer>
+</body>
+</html>

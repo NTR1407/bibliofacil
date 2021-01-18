@@ -1,0 +1,84 @@
+<html>
+   
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>BiblioFacil | Edita Libro</title>
+        <link rel="stylesheet" href="fonts/style.css">
+        <link rel="stylesheet" href="css/hojaEstilos_editaLibro.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="js/jquery-3.5.1.js"></script> 
+    </head>
+    
+<body>
+    <header>
+     <h2 class="h1">BIBLIOFACIL</h2>
+      <input type="checkbox" id="btn-menu">
+      <label for="btn-menu" class="icon-menu"></label>
+       <nav class="menu">
+           <ul>
+                <li class = "submenu" ><a href="Principal_02.html">Principal
+                   <span class="icon-home"></span></a>
+                </li>
+                <li class = "submenu" ><a href="#">Ayuda
+                   <span class="icon-question"></span></a>
+                </li>
+           </ul>
+       </nav> 
+    </header>
+    <script src="js/principal_02.js"></script>    
+    
+    <form method="post" class="form">    
+    <p>
+        <span class="icon-book">  Edita Libro </span>
+    </p>
+        <table>
+            <tr>
+                <td>N° Ejemplares:</td>
+                <td><label for="n_ejemplares"></label>
+                <input type="number" name="n_ejemplares" id="n_ejemplares" required="required">*</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Ubicación:</td>
+                <td><label for="ubicacion"></label>
+                <input type="text" name="ubicacion" id="ubicacion" required="required">*</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Observaciones:</td>
+                <td><label for="observaciones"></label>
+                <input type="text" name="observaciones" id="observaciones" required="required">*</td>
+            </tr> 
+            <tr>
+                <td>&nbsp;</td>    
+            </tr> 
+            <tr>
+                <td>Estado</td>
+            <td>
+                <label for="editorial"></label>
+                <select name="editorial">
+                    <option></option>
+                    <option>1</option>
+                    <option>0</option>
+                </select>
+            </td>
+            </tr>  
+      </table>
+      <input type="submit"  value="Enviar Información" name="enviar" id="enviar">
+    </form>
+    <footer class="footer">
+        <p>
+            Siguenos en nuestras redes sociales: 
+            <a href="#" ><span class="icon-facebook2"></span></a> 
+            <a href="#" ><span class="icon-twitter"></span></a> 
+            <a href="#" ><span class="icon-instagram"></span></a><br>
+            Todos los derechos reservados 2020
+        </p>
+    </footer>
+</body>
+</html>

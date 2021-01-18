@@ -1,0 +1,246 @@
+/*Estilos generales*/
+
+header{
+    width: 100%;
+    height: 55px;
+    background-color: aqua;
+}
+
+footer{
+    width: 100%;
+    height: 55px;
+    background-color: aqua;
+    overflow: hidden;
+}
+h1 {
+    color: #2d3436;
+    float: left;
+    margin: 0;
+    padding: 10px;
+    border-color: #747d8c;
+    font-family: 'Merienda One', cursive;
+}
+h4{
+    font-size: 20px
+}
+.ch2{
+    text-align: center;
+    
+}
+
+.ch21{
+    text-align: center;
+    font-family: 'Merienda One', cursive;
+    
+}
+
+/*Estilos de los botones*/
+
+.button{
+    background:#7f8c8d;
+    color: #ecf0f1;
+    float: right;
+    display: inline-block;
+    font-size: 1em;
+    margin: 5px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 13%;
+    text-decoration: none;
+    box-shadow: 0px 3px 0px #373c3c;
+    border-radius: 50px;
+    font-family: 'Merienda One', cursive;
+}
+
+.button1{
+    background:#7f8c8d;
+    color: #ecf0f1;
+    font-size: 0.9em;
+    border: 3px;
+    padding: 4.2px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 2px 0px #373c3c;
+    border-radius: 35px;
+    font-family: 'Merienda One', cursive;
+}
+.button span {
+    margin-right: 5px;
+    margin-left: 3px;
+}
+.button.ayuda{
+    bottom: 0;
+    position:fixed;
+    float: right;
+}
+.button:hover{
+    box-shadow: 0px 0px 0px;
+    padding-top: 7px; 
+}
+.sociales{
+    text-align: center;
+    text-decoration: none;    
+}
+.sociales span {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.parrafos{
+    font-family: monospace;
+    font-size: 15px;
+    background-color: rgba(165, 247, 244, 0.34);
+  font-family: 'Rubik', sans-serif;
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+     -moz-box-shadow: 0 10px 5px #888888;
+     box-shadow: 0 10px 5px #888888;
+}
+
+.parrafos1{
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgba(165, 247, 244, 0.34);
+    padding: 30px;
+    font-family: 'Rubik', sans-serif;
+  
+}
+.parrafos span{
+    margin-right: 5px;
+    margin-left: 3px;
+}
+.aside1{
+    text-align: right;
+     background: rgba(0, 255, 255, 0.1);
+    padding: 3px;
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+     -moz-box-shadow: 0 10px 5px #888888;
+     box-shadow: 0 10px 5px #888888;
+}
+.aside1 span{
+    margin-right: 5px;
+    margin-left: 3px;
+}
+.aside1 p{
+    font-size: 17px;
+}
+.contenedor{
+    padding: 10px;
+    background-color: rgba(96, 103, 101, 0.09);
+    overflow: hidden;
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+     -moz-box-shadow: 0 10px 5px #888888;
+     box-shadow: 0 10px 5px #888888;
+}
+.contenedor2{
+    float: left;
+    background: rgba(0, 255, 255, 0.1);
+    display: table;
+    height: 220px;
+    margin: 1.2rem;
+    text-align: center;
+    width: 30%;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+     -moz-box-shadow: 0 10px 5px #888888;
+     box-shadow: 0 10px 5px #888888;
+}
+.contenedor2 p{
+    display:table;
+    margin:0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.contenedor3{
+    margin:140px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 280px;
+    width: 550px;
+    padding: 15px ;
+    background-color: rgba(96, 103, 101, 0.09);
+    /*overflow: hidden;*/
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+     -moz-box-shadow: 0 10px 5px #888888;
+     box-shadow: 0 10px 5px #888888;
+}
+
+.form{
+    text-align: center;
+    padding-left: 30px;
+}
+
+.field{
+    height: 100%;
+    width: 95%;
+    border-left-width: medium;
+    text-align: center;
+    position: relative;
+    background-color: #DBFFFB;
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+     -moz-box-shadow: 0 10px 5px #888888;
+     box-shadow: 0 10px 5px #888888;
+}
+
+.legend p {
+    font-weight: bold;
+    font-size: 20px; 
+}
+
+.legend1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px; 
+}
+
+
+/*Elementos pagina ayuda*/
+
+.footer{
+    width: 100%;
+    height: 55px;
+    background-color: aqua;
+    font-size: 13px;
+    font-size: 13px;
+    text-align: center;
+}
+
+/*
+table, th, td{
+    width: 30%;
+    height: 30%;
+    border: 0.5px solid #09205C;
+   border-collapse: collapse;
+    padding: 0.2em;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    background-color: #E7FFF7;
+}
+/*
+table tr:hover {
+    background: red;
+}
+
+table td:hover {
+    background: #000;
+    color:#fff;
+}
+
+
+.table1{
+    padding: 1em;
+    float: left;
+    
+}
+
+.ctable{
+    background-color: #F5FFFE;
+    /*padding: 10px;*/
+    /*border: #666 5px solid;
+   /* border-radius: 5px;
+
+}*/

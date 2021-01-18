@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BiblioFacil | Disponibilidad</title>
+        <link rel="stylesheet" href="fonts/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/hojaEstilos_disponibilidad.css">
+        <script src="js/jquery-3.5.1.js"></script> 
+    </head>
+    
+    <body>
+  
+        <header>
+            <h1>BIBLIOFACÍL</h1>
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu" class="icon-menu"></label>
+            <nav class="menu">
+                <ul>
+                     <li class = "submenu" ><a href="Principal_02.php">Principal
+                        <span class="icon-home"></span></a>
+                     </li>
+                </ul>
+            </nav> 
+        </header>  
+        <script src="js/principal_02.js"></script>
+         
+        <section>
+            <div class="div1">
+                <table class="table1">
+                   <thead>
+                    <tr id="titulo_t1">
+                        <th>Categoría</th><th>Prestados</th><th>Disponibles</th><th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Ciencias</td>
+
+                    </tr>
+                    <tr >
+                        <td>Deportes</td>
+
+
+                    </tr>
+                    <tr>
+                        <td>Investigación</td>
+     
+                    </tr>
+                    <tr>
+                        <td>Lenguas</td>
+
+                    </tr>
+                    <tr>
+                        <td>Literatura</td>
+
+                    </tr>
+                    <tr>
+                        <td>Matemáticas</td>
+
+                    </tr>
+                    <tr>
+                        <td>Tecnología</td>
+         
+                    </tr>
+                    <tr>
+                        <td>Médicina</td>
+
+                    </tr>
+                    
+                    </tbody>
+                </table>
+                
+                <div class="buscar" >
+                    <!--<h3>Libros</h3>-->
+                    <form id="buscar_form" method="get">
+                        <label for="">
+                        <input id="buscar_caja" type="text" name = "nombre" placeholder = "Ej: Matématicas" value = "<?php echo $libro_busca; ?>">
+                        <input id="buscar_envio" type="submit" name:= "buscar"  value="Buscar">
+                        </label>
+                    </form>
+                    <table class="table2">
+                        <thead>
+                           <tr id="titulo_t2">
+                                <th>Id</th><th>Categoria</th><th>Nombre</th><th>Disponibles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           
+                                    <tr>
+                                        <td>pruebas</td>
+                                        <td>pruebas</td>
+                                        <td>pruebas</td>
+                                        <td>pruebas</td>
+                                    </tr>
+
+                        </tbody>
+                    </table>
+                    <div id="boton_paginado_1">
+                       
+                            <li id="li" >
+                                <a id="paginado_1"  > 
+                                    1
+                                </a>
+                            </li>
+    
+                    </div>
+                </div> 
+                <div class="buscar" >
+                    <!--<h3>Libros</h3>-->
+                    <form id="buscar_form_1" method="get">
+                        <label for="">
+                        <input id="buscar_caja_1" type="text" name = "Nombre_Libro" placeholder = "Ej: Quimica" value = "prueba">
+                        <input id="buscar_envio_1" type="submit" name:= "buscar"  value="Buscar">
+                        </label>
+                    </form>
+                    <table class="table2">
+                        <thead>
+                           <tr id="titulo_t2_1">
+                                <th>Id Prestamo</th><th>Id Usuario</th><th>Nombre Libro</th>
+                                <th>Fecha Prestamo</th><th>Fecha Vencimiento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                                    <tr>
+                                        <td>pruebas</td>
+                                        <td>pruebas</td>
+                                        <td>pruebas</td>
+                                        <td>pruebas</td>
+                                        <td>pruebas</td>
+                                    </tr>
+
+                        </tbody>
+                    </table>
+                    <div id="boton_paginado">
+                        
+                            <li id="li_1" >
+                                <a id="paginado"   > 
+                                  1  
+                                </a>
+                            </li>
+
+                    </div>
+                    <div class="form_edita">
+                    <form method="post"  id="formulario" class="form">    
+                    <table>
+
+                        <tr>
+                            <td><b>Id Prestamo:</b></td>
+                            <td><label for="id_usuario"></label>
+                            <input type="number" name="id_usuario" value = "<?php echo $row['id_usuario']; ?>" id="id_usuario"></td>
+                        </tr>   
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><b>Fecha Entrega: </b></td>
+                            <td><label for="nombre"></label>
+                            <input type="text" name="nombres" id="nombre"></td>
+
+
+                        </tr>
+                    </table>
+                    <input type="submit" id="actualizar" value="Entregar">
+                    <script src="js/EntregaLibro.js"></script>  
+                    </form> 
+                    <button id="muestra" onclick="muestraFormulario()">Entregar</button>
+                </div> 
+                </div>  
+            </div> 
+        </section>  
+                
+        <footer class="footer" >
+            <p>
+                Siguenos en nuestras redes sociales: 
+                <a href="#" ><span class="icon-facebook2"></span></a> 
+                <a href="#" ><span class="icon-twitter"></span></a> 
+                <a href="#" ><span class="icon-instagram"></span></a><br>
+                Todos los derechos reservados 2020
+            </p>
+        </footer>
+    </body> 
+</html>                                                        

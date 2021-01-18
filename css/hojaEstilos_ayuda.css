@@ -1,0 +1,129 @@
+/*RESET BASICO DE LOS ESTILOS PREDETERMINADOS QUE ASIGNA EL NAVEGADOR*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*TAMAÑO Y COLOR DEL ENCABEZADO, ADEMAS DE QUE UBICA EL MENU A LA DERECHA */
+
+body{
+    background: #FFF1E8;
+}
+
+header {
+    height: 50px;
+    background: rgba(30, 75, 83, 0.98);
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: 55px;
+    background-color: aqua;
+    overflow: hidden;
+}
+h1{
+    color: #EFEDEB;
+    margin-right: auto;
+    padding: 10px;
+    border-color: #747d8c;
+    font-family: 'Roboto', sans-serif;
+}
+h4{
+    font-size: 20px
+}
+
+.contenedor3{
+    margin:140px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 280px;
+    width: 550px;
+    padding: 15px ;
+    background-color: rgba(96, 103, 101, 0.09);
+    /*overflow: hidden;*/
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+     -moz-box-shadow: 0 10px 5px #888888;
+     box-shadow: 0 10px 5px #888888;
+}
+
+.parrafos1{
+   font-size: 15px;
+   text-align: center;
+   padding: 30px;
+   font-family: 'Roboto', sans-serif;  
+}
+
+.parrafos1 span{
+    margin-left: 10px;
+}
+
+.parrafos1 p{
+    margin-bottom: 10px;
+    font-size: 19px;
+    color:#817164;
+}
+
+.footer{
+    width: 100%;
+    height: 65px;
+    background-color: rgba(30, 75, 83, 0.98);
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.footer p{
+    text-align: center; 
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.footer a span {
+    margin-left: 15px;
+    font-size: 18px;
+    color:#fff;
+}
+
+.menu ul {
+    background: rgba(30, 75, 83, 0.98); 
+    display:flex;
+    list-style: none;
+}
+
+/*OCULTA LOS SUB BOTONES*/
+.menu ul ul {
+    display: none;
+}
+
+/*BORDES Y COLOR DE LOS BOTONES VISIBLES*/
+
+.menu a{
+    display: block;
+    padding: 15px 20px;
+    color:#fff;
+    text-decoration: none;
+}
+
+/*CUANDO EL MOUSE PASA POR ENCIMA SE TORNA OSCURO CLARO EL BOTON*/
+
+.menu a:hover{
+    background: rgba(0,0,0,0.3)
+}
+
+
+/*DISTANCIA DEL ICONO EN LOS BOTONES PRINCIPALES*/
+.menu a span {
+    margin-left: 10px;
+}
+
+/*CUANDO EL MOUSE PASA POR ENCIMA DEL BOTON SE DESPLIEGAN LAS OPCIONES*/
+
+.menu ul li:hover ul {
+    display: block;
+    position: absolute;
+}

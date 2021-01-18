@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>BiblioFacil | Nuevo Libro</title>
+        <link rel="stylesheet" href="fonts/style.css">
+        <link rel="stylesheet" href="css/hojaEstilos_nuevoLibro.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="js/jquery-3.5.1.js"></script> 
+    </head>
+    
+<body>
+    <header>
+     <h2 class="h1">BIBLIOFACIL</h2>
+      <input type="checkbox" id="btn-menu">
+      <label for="btn-menu" class="icon-menu"></label>
+       <nav class="menu">
+           <ul>
+                <li class = "submenu" ><a href="Principal_02.html">Principal
+                   <span class="icon-home"></span></a>
+                </li>
+                <li class = "submenu" ><a href="#">Ayuda
+                   <span class="icon-question"></span></a>
+                </li>
+           </ul>
+       </nav> 
+    </header>
+    <script src="js/principal_02.js"></script>    
+    
+    <div class="div1">
+        <form method="post" class="form">    
+            <p>
+                <span class="icon-book">  Nuevo Libro </span>
+            </p>
+            <table class="tabla">
+                <tr>
+                    <td>Titulo:</td>
+                    <td><label for="titulo"></label>
+                    <input type="text" name="titulo" id="titulo" required="required">*</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Autor(es):</td>
+                    <td>
+                    <label for="autor"></label> 
+                    <input type="text" name="autor" id="autor" required="required">*
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                <td>Categoria:</td>
+                <td>
+                    <label for="categoria"></label>
+                    <input type="text" name="categoria" id="categoria" required="required">*
+                </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>    
+                </tr>
+                <tr>
+                <td>Editorial:</td>
+                <td>
+                    <label for="editorial"></label>
+                    <input type="text" name="editorial" id="editorial" required="required">*
+                </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>    
+                </tr>    
+                <tr>
+                    <td>N° Ejemplares:</td>
+                    <td><label for="n_ejemplares"></label>
+                    <input type="number" name="n_ejemplares" id="n_ejemplares" required="required">*</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                
+                <tr>
+                    <td>Ubicación:</td>
+                    <td><label for="ubicacion"></label>
+                    <input type="text" name="ubicacion" id="ubicacion" required="required">*</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Observaciones:</td>
+                    <td><label for="observaciones"></label>
+                    <input type="text" name="observaciones" id="observaciones" required="required">*</td>
+                </tr>
+            </table>
+        </form>
+        <input type="submit"  value="Enviar Información" name="enviar" id="enviar">
+    </div>
+    <div class="div2">
+        <table class="table1">
+            <thead>
+                <tr>
+                    <th>Autor</th><th>Id</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>prueba</td>
+                    <td>01</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class = "table1">
+            <thead>
+                <tr>
+                    <th>Categoria</th><th>Id</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>prueba</td>
+                    <td>01</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class ="table1">
+            <thead>
+                <tr>
+                    <th>Editorial</th><th>Id</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>prueba</td>
+                    <td>01</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer class="footer">
+        <p>
+            Siguenos en nuestras redes sociales: 
+            <a href="#" ><span class="icon-facebook2"></span></a> 
+            <a href="#" ><span class="icon-twitter"></span></a> 
+            <a href="#" ><span class="icon-instagram"></span></a><br>
+            Todos los derechos reservados 2020
+        </p>
+    </footer>
+</body>
+</html>

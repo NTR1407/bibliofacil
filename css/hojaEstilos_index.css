@@ -1,0 +1,249 @@
+/*RESET BASICO DE LOS ESTILOS PREDETERMINADOS QUE ASIGNA EL NAVEGADOR*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*TAMAÑO Y COLOR DEL ENCABEZADO, ADEMAS DE QUE UBICA EL MENU A LA DERECHA */
+
+body{
+    background: #FFF1E8;
+}
+
+header {
+    height: 50px;
+    background: rgba(30, 75, 83, 0.98);
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+h1{
+    color: #fff;
+    margin-right: auto;
+    padding: 10px;
+    border-color: #747d8c;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*OCULTA EL BOTON MENU*/
+
+#btn-menu{
+    display: none;
+}
+
+
+/*OCULTA EL BOTON Y MUESTRA MANITO CUANDO ESTA ENCIMA DE EL*/
+header label {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/*ORGANIZA DE MANERA HORIZONTAL EL MENU DE BOTONES*/
+.menu ul {
+    background: rgba(30, 75, 83, 0.98); 
+    display:flex;
+    list-style: none;
+}
+
+/*OCULTA LOS SUB BOTONES*/
+.menu ul ul {
+    display: none;
+}
+
+/*BORDES Y COLOR DE LOS BOTONES VISIBLES*/
+
+.menu a{
+    display: block;
+    padding: 15px 20px;
+    color:#fff;
+    text-decoration: none;
+}
+
+/*CUANDO EL MOUSE PASA POR ENCIMA SE TORNA OSCURO CLARO EL BOTON*/
+
+.menu a:hover{
+    background: rgba(0,0,0,0.3)
+}
+
+
+/*DISTANCIA DEL ICONO EN LOS BOTONES PRINCIPALES*/
+.menu a span {
+    margin-left: 10px;
+}
+
+/*CUANDO EL MOUSE PASA POR ENCIMA DEL BOTON SE DESPLIEGAN LAS OPCIONES*/
+
+.menu ul li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+#registro {
+    background: #DBFFFB;
+    margin-top: 10px;
+    margin-right: 30px;
+    border-radius: 5px;
+     -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+    -moz-box-shadow: 0 10px 5px #888888;
+    box-shadow: 0 4px 5px #888888;
+    
+}
+#entrar{
+    width: 100px;
+    height: 25px;
+    background: #D8CCC3;
+    margin: auto;
+    margin-bottom: 10px;
+    color:#000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+     -webkit-box-shadow: 0 5px 5px #888888; /*Sombreado del contenedor global*/
+    -moz-box-shadow: 0 5px 5px #888888;
+    box-shadow: 0 5px 5px #888888;
+}
+
+.parrafos{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #FFD6B9;
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+    -moz-box-shadow: 0 10px 5px #888888;
+    box-shadow: 0 4px 5px #888888;
+}
+
+.parrafos h2 {
+    text-align: center;
+    margin: 8px;
+    font-family: 'Roboto', sans-serif;
+   
+}
+.parrafos h4 {
+    text-align: center;
+    margin: 8px;
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+.parrafos h2 span{
+    margin-right: 15px;
+}
+
+.parrafos p{
+    text-align: center;
+    margin: 10px; 
+    
+}
+
+.footer{
+    width: 100%;
+    height: 65px;
+    background-color: rgba(30, 75, 83, 0.98);
+    overflow: hidden;
+}
+
+.footer p{
+    text-align: center; 
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer p{
+    margin-top: 15px;
+    
+}
+
+.footer a span {
+    margin-left: 15px;
+    font-size: 18px;
+    color:#fff;
+}
+
+.form{
+    text-align: center;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.field{
+    height: 100%;
+    width: 95%;
+    border-left-width: medium;
+    text-align: center;
+    position: relative;
+    background-color: #DBFFFB;
+    -webkit-box-shadow: 0 10px 5px #888888; /*Sombreado del contenedor global*/
+     -moz-box-shadow: 0 10px 5px #888888;
+     box-shadow: 0 10px 5px #888888;
+}
+
+.legend p {
+    font-weight: bold;
+    font-size: 20px; 
+}
+
+.legend1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px; 
+}
+
+.tamano_img{
+    height: 220px;
+    width: 220px;
+    padding: 1em;
+}
+
+/*CREACION DE LOS ESTILOS PARA QUE SEA RESPONSIVE*/
+
+@media (max-width:768px){
+    header label {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        top: 50px;
+        left:0;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+    
+    .menu ul {
+        /*flex-direction: column;*/
+        display: block;
+        background: #555;        
+    }
+    
+    .menu ul li:hover ul {
+        display: none;
+        position: static;
+    }
+    
+    .menu a span {
+        position: absolute;
+        right: 5px;
+    }
+    
+    #btn-menu:checked ~ .menu {
+        transform: translateX(0%)
+    }
+    
+    .menu ul ul {
+        background: rgba(0,0,0,0.4);
+    }
+    
+    .menu ul ul a{
+        padding: 15px 45px;
+    }
+}
+

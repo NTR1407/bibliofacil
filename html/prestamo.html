@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>BiblioFacil | Prestamos</title>
+        <link rel="stylesheet" href="fonts/style.css">
+        <link rel="stylesheet" href="css/hojaEstilos_prestamos.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="js/jquery-3.5.1.js"></script> 
+    </head>
+    
+<body>
+    <header>
+     <h1 class="h1">BIBLIOFACIL</h1>
+      <input type="checkbox" id="btn-menu">
+      <label for="btn-menu" class="icon-menu"></label>
+       <nav class="menu">
+           <ul>
+                <li class = "submenu" ><a href="Principal_02.html">Principal
+                   <span class="icon-home3"></span></a>
+                </li>
+                <li class = "submenu" ><a href="#">Ayuda
+                   <span class="icon-question"></span></a>
+                </li>
+           </ul>
+       </nav> 
+    </header>
+    <script src="js/principal_02.js"></script> 
+       
+    <div class="div_formulario">
+        <form method="post" class="form">    
+        <p>
+            <span class="icon-book">  Ingrese Datos del Libro </span>
+        </p>
+            <table>
+                <tr>
+                    <td>Id Usuario:</td>
+                    <td><label for="id_usuario"></label>
+                    <input type="text" name="id_usuario" id="id_usuario">*</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Id Libro:</td>
+                    <td><label for="id_libro"></label>
+                    <input type="text" name="id_libro" id="id_libro">*</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Fecha Inicio:</td>
+                    <td><label for="fecha_vencimiento"></label>
+                    <!-- CAMBIAR LA FECHA MINIMA A LA FECHA ACTUAL Y LA FECHA QUE SE MUESTRA A LA FECHA ACTUAL-->
+                    <input type="date" name="fecha_vencimiento" step="1" min="2020-08-15" max="2020-08-15" value ="2020-08-15" id="fecha_inicio">*</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Fecha Fin:</td>
+                    <td><label for="fecha_vencimiento"></label>
+                    <!-- CAMBIAR LA FECHA MINIMA A LA FECHA ACTUAL Y LA FECHA QUE SE MUESTRA A LA FECHA ACTUAL-->
+                    <input type="date" name="fecha_vencimiento" step="1" min="2020-08-15" max="2020-08-15" value ="2020-08-15" id="fecha_fin">*</td>
+                </tr>
+                
+            </table>
+    
+            <input type="submit"  value="Enviar Información" name="enviar" id="enviar">
+        </form>
+    </div>
+    <table class="table1">
+        <thead>
+         <tr id="titulo_t2">
+              <th>Id</th><th>Categoria</th><th>Nombre</th><th>Disponibles</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td>as</td><td>as</td><td>as</td><td>as</td>
+          </tr>
+          </tbody>
+    </table> 
+    <footer class="footer">
+        <p>
+            Siguenos en nuestras redes sociales: 
+            <a href="#" ><span class="icon-facebook2"></span></a> 
+            <a href="#" ><span class="icon-twitter"></span></a> 
+            <a href="#" ><span class="icon-instagram"></span></a><br>
+            Todos los derechos reservados 2020
+        </p>
+    </footer>
+</body>
+</html>

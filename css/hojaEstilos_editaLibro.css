@@ -1,0 +1,184 @@
+/*RESET BASICO DE LOS ESTILOS PREDETERMINADOS QUE ASIGNA EL NAVEGADOR*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*TAMAÑO Y COLOR DEL ENCABEZADO, ADEMAS DE QUE UBICA EL MENU A LA DERECHA */
+
+body{
+    background: #FFF1E8;
+}
+
+
+header {
+    height: 50px;
+    background: rgba(30, 75, 83, 0.98);
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h1{
+    color: #fff;
+    margin-right: auto;
+    padding: 10px;
+    border-color: #747d8c;
+    font-family: 'Roboto', sans-serif;
+}
+
+h4{
+    font-size: 20px
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+}
+
+.menu ul {
+    background: rgba(30, 75, 83, 0.98); 
+    display:flex;
+    list-style: none;
+}
+
+/*OCULTA LOS SUB BOTONES*/
+.menu ul ul {
+    display: none;
+}
+
+/*BORDES Y COLOR DE LOS BOTONES VISIBLES*/
+
+.menu a{
+    display: block;
+    padding: 15px 20px;
+    color:#fff;
+    text-decoration: none;
+}
+
+/*CUANDO EL MOUSE PASA POR ENCIMA SE TORNA OSCURO CLARO EL BOTON*/
+
+.menu a:hover{
+    background: rgba(0,0,0,0.3)
+}
+
+
+/*DISTANCIA DEL ICONO EN LOS BOTONES PRINCIPALES*/
+.menu a span {
+    margin-left: 10px;
+}
+
+/*CUANDO EL MOUSE PASA POR ENCIMA DEL BOTON SE DESPLIEGAN LAS OPCIONES*/
+
+.menu ul li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+.form{
+    text-align: center;
+    padding-left: 30px;
+}
+
+.form table{
+    background: #D8CCC3;
+    text-align: center;
+    padding: 7px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 5px #888888; /*Sombreado del contenedor global*/
+    -moz-box-shadow: 0 5px 5px #888888;
+    box-shadow: 0 5px 5px #888888;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px
+}
+
+#enviar{
+    width: 150px;
+    height: 35px;
+    background: #D8CCC3;
+    margin: auto;
+    margin-bottom: 10px;
+    color:#000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+     -webkit-box-shadow: 0 5px 5px #888888; /*Sombreado del contenedor global*/
+    -moz-box-shadow: 0 5px 5px #888888;
+    box-shadow: 0 5px 5px #888888;
+}
+ 
+.footer{
+    width: 100%;
+    height: 65px;
+    background-color: rgba(30, 75, 83, 0.98);
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.footer p{
+    text-align: center; 
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.footer a span {
+    margin-left: 15px;
+    font-size: 18px;
+    color:#fff;
+}
+
+/*CREACION DE LOS ESTILOS PARA QUE SEA RESPONSIVE*/
+
+@media (max-width:768px){
+    header label {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        top: 50px;
+        left:0;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+    
+    .menu ul {
+        /*flex-direction: column;*/
+        display: block;
+        background: #555;        
+    }
+    
+    .menu ul li:hover ul {
+        display: none;
+        position: static;
+    }
+    
+    .menu a span {
+        position: absolute;
+        right: 5px;
+    }
+    
+    #btn-menu:checked ~ .menu {
+        transform: translateX(0%)
+    }
+    
+    .menu ul ul {
+        background: rgba(0,0,0,0.4);
+    }
+    
+    .menu ul ul a{
+        padding: 15px 45px;
+    }
+}
